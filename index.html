@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Gadgets</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+   
+        <button class="btn" onclick="my_modal_2.showModal()">open modal 2</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello! 2</h3>
+    <p class="py-4">Press ESC key or click outside to close</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+    </div>
+    <section class="flex flex-col justify-center">
+       <div  class="flex justify-center my-10">
+        <input type="text" class="border-2 border-red-500 rounded pl-4" placeholder="Search your phone" id="search-field">
+        <button class="btn btn-primary" id="input-button" onclick="searchText()">Search</button>
+       </div>
+        <div id="container" class="grid grid-cols-3 gap-5 w-[80%] mx-auto">
+           
+        </div>
+        <div class="flex justify-center">
+            <button class="btn btn-primary w-fit text-center hidden mt-10" id="showall" onclick="showAll()">Show All</button>
+        </div>
+    </section>
+    <div>
+      
+   
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
